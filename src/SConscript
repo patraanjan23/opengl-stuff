@@ -1,0 +1,11 @@
+env = Environment(
+    CFLAGS = "-I include",
+    LIBS = ["glad", "dl"],
+    LIBPATH = ["."]
+)
+
+env.ParseConfig('pkg-config --cflags --libs glfw3')
+
+env.Library('glad', ['glad.c'])
+env.Program('program0.c')
+env.Program('program1.c')

@@ -1,0 +1,9 @@
+.vscode/
+build/
+*.dblite
+*.out
+*.o
+*.exe
+*.a
+*.obj
+*.dll
